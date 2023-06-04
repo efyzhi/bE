@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake News Detection Software</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                
+            </div>
+            <ul>
+                <li><a class="links" href="#home" onclick="setActiveLink(event, this)">Home</a></li>
+                <li><a class="links" href="#input" onclick="setActiveLink(event, this)">Input</a></li>
+                <li><a class="links" href="#about" onclick="setActiveLink(event, this)">About</a></li>
+                <li><a class="links" href="#contact" onclick="setActiveLink(event, this)">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="home">
+            <div class="overlay"></div>
+            <div class="container">
+                <h1>Welcome to <span>Fake News</span> Detection Software</h1>
+                <p>This software is designed to help you detect fake news and analyze the text for its authenticity.</p>
+                <a href="#input" class="cta">Get Started</a>
+            </div>
+        </section>
+
+        <section id="input">
+            <div class="container">
+                <h2>Enter the Text to Analyze</h2>
+                <form action="#">
+                    <label for="text-input">Paste or Type the Text Here</label>
+                    <textarea id="text-input" name="text" placeholder="Paste or Type the Text Here"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="results">
+            <div class="container">
+                <h2>Analysis Results</h2>
+                <p>The text entered by you is classified as <span class="result-type">Real/Fake</span></p>
+                <p>Explanation: <span class="result-explanation">Brief explanation of the reasoning behind the classification</span></p>
+                <a href="#input" class="cta">Analyze Another Text</a>
+                <a href="#about" class="back">Back</a>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2>About Fake News Detection Software</h2>
+                <p>Information about the development team, sources of data, methods used for analysis, and any relevant acknowledgments or disclaimers.</p>
+                <a href="#home" class="back">Back</a>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container-form">
+                <div><h2>Contact Us</h2></div>
+                <div>
+                    <form class="form" action="#">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+    
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+    
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Enter Your Message" required></textarea>
+    
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+                <div><a href="#home" class="back">Back</a></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../js/index.js"></script>
+</body>
+</html>
