@@ -8,16 +8,20 @@
 </head>
 <body>
     <header>
+        <button id="theme-toggle">Change Theme</button>
         <nav>
+            <button id="menu-toggle" class="menu-toggle">Menu</button>
             <div>
                 
-            </div>
-            <ul>
+            </div> 
+            <div class="mobile-menu-sidebar">
+            <ul class="mobile-menu">
                 <li><a class="links" href="#home" onclick="setActiveLink(event, this)">Home</a></li>
                 <li><a class="links" href="#input" onclick="setActiveLink(event, this)">Input</a></li>
                 <li><a class="links" href="#about" onclick="setActiveLink(event, this)">About</a></li>
                 <li><a class="links" href="#contact" onclick="setActiveLink(event, this)">Contact</a></li>
             </ul>
+            </div>
         </nav>
     </header>
 
