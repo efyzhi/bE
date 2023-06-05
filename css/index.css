@@ -234,7 +234,7 @@ header p {
 #input {
   padding: 100px 20px;
   text-align: center;
-  min-height: calc(100vh - 70px);
+  height: 100vh;
 }
 
 #input h2 {
