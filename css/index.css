@@ -34,7 +34,7 @@ body {
 #theme-toggle {
   position: absolute;
   top: 1rem;
-  right: 0;
+  right: 1.5rem;
   border: none;
 }
 
