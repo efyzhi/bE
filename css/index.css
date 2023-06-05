@@ -344,14 +344,22 @@ header p {
 
 #about {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   height: 100vh;
+  padding: 3rem;
+  gap: 1.5rem;
 }
 
 #about .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  min-height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: column;
+}
+
+.article-about {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
 
@@ -528,4 +536,11 @@ color: #666;
   .links:hover {
       color: #0070f3;
   }
+
+  
+.article-about {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
 }
