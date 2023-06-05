@@ -31,6 +31,13 @@ body {
   background-color: var(--background-color);
 }
 
+#theme-toggle {
+  position: absolute;
+  top: 1rem;
+  right: 0;
+  border: none;
+}
+
 #home .overlay {
   position: absolute;
   top: 4.4rem;
@@ -93,10 +100,6 @@ header {
   width: 100%;
   margin: 0 auto;
   padding: 2rem;
-}
-
-.logo img {
-  height: 50px;
 }
 
 nav {
@@ -341,16 +344,22 @@ header p {
 
 #about {
   display: flex;
-  /* background-color: white; */
   height: 100vh;
 }
+
+#about .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  min-height: calc(100vh - 70px);
+}
+
 
 .container-form {
 min-height: calc(100vh - 70px);
 max-width: 400px;
 margin: 0 auto;
 padding: 20px;
-/* background-color: #f2f2f2; */
 border: 1px solid #ccc;
 border-radius: 5px;
 }
@@ -437,9 +446,40 @@ color: #666;
       position: fixed;
   }
 
+  #menu-toggle {
+    border: none;
+    font-size: 2rem;
+  }
+
+  #theme-toggle {
+    position: absolute;
+    right: 0;
+    border: none;
+  }
+
   .menu-toggle {
       display: block;
   }
+  
+  .menu-icon {
+    display: block;
+  }
+  
+  .close-icon {
+    display: none;
+  }
+  
+  .mobile-menu-sidebar.active .menu-icon {
+    display: none;
+  }
+  
+  .mobile-menu-sidebar.active.close-icon {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+  }
+  
 
   .mobile-menu-sidebar {
     display: none;
@@ -455,7 +495,7 @@ color: #666;
       margin: auto;
       width: 100%;
       height: 100vh;
-      background-color: black;
+      background-color: white;
       padding: 20px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
       z-index: 999;

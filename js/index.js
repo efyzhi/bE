@@ -37,8 +37,14 @@ window.addEventListener('scroll', function() {
 
 document.getElementById("menu-toggle").addEventListener("click", function() {
     let mobileMenuSidebar = document.querySelector(".mobile-menu-sidebar");
-    mobileMenuSidebar.classList.toggle("active");  
+    mobileMenuSidebar.classList.toggle("active");
+  
+    let closeIcon = document.querySelector(".close-icon");
+    closeIcon.addEventListener("click", function() {
+      mobileMenuSidebar.classList.remove("active");
+    });
   });
+  
   
   document.querySelectorAll(".mobile-menu li a").forEach(function(link) {
     link.addEventListener("click", function() {
