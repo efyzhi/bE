@@ -541,6 +541,10 @@ color: #666;
 .article-about {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: .5rem;
+}
+
+.article-about p {
+  font-size: 13px;
 }
 }
