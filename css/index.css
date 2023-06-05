@@ -465,6 +465,9 @@ color: #666;
   .mobile-menu {
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
+      height: 70%;
+      margin: auto;
   }
 
   .mobile-menu li {
