@@ -40,7 +40,7 @@ body {
 
 #home .overlay {
   position: absolute;
-  top: 4.4rem;
+  top: 0;
   left: 0;
   width: 100%;
   min-height: calc(100vh - 70px);
